@@ -7,7 +7,7 @@ public class FiguraGeometrica {
         this.color = color;
     }
 
-    
+
     public String getNombre() {
         return nombre;
     }
@@ -21,5 +21,7 @@ public class FiguraGeometrica {
         this.color = color;
     }
     /* Segundo commit*/
+
+    
 
 }
