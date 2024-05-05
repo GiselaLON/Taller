@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 
+
 public class Empleado extends Persona implements Trabajador {
 
     public Empleado(String nombre, int edad, LocalDate fechaNacimiento) {
