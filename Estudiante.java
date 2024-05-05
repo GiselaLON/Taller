@@ -1,7 +1,8 @@
 import java.time.LocalDate;
 
 public class Estudiante extends Persona {
-    
-    /*quinto commit */ 
-    
+     /*quinto commit */ 
+
+private String grado;
+/*sexto commit */
 }
