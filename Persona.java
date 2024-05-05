@@ -8,7 +8,7 @@ public class Persona {
 
     private String nombre;
     private int edad;
-    private Date fechaNacimiento;
+    private  LocalDate fechaNacimiento;
 
     
     /**
@@ -17,7 +17,7 @@ public class Persona {
 
 
     /*metodo constructor */
-    public Persona(String nombre, int edad, Date fechaNacimiento) {
+    public Persona(String nombre, int edad, LocalDate fechaNacimiento) {
         this.nombre = nombre;
         this.edad = edad;
         this.fechaNacimiento = fechaNacimiento;
@@ -30,7 +30,12 @@ public class Persona {
 
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        if (nombre == null) {
+            System.out.println("No se permite el campo vacio");
+        } else {
+            this.nombre = nombre;
+        }   
+
     }
 
 
@@ -40,23 +45,35 @@ public class Persona {
 
 
     public void setEdad(int edad) {
-        this.edad = edad;
+        if (edad <= 0) {
+            System.out.println("Error en la edad, ponla en positivo");
+        } else {
+            this.edad = edad;
+        }
+
     }
 
 
-    public Date getFechaNacimiento() {
+    public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
 
 
-    public void setFechaNacimiento(Date fechaNacimiento) {
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
+        if (fechaNacimiento == null) {
+        System.out.println("No se permite el campo vacio de la fecha de nacimiento");
+        } else {
         this.fechaNacimiento = fechaNacimiento;
+        }  
+
     }
-/**
- * Segundo commit
+/*
+ * Tercer commit
  */
 
-
-
-
 }
+
+
+
+
+
