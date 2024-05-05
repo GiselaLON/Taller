@@ -71,6 +71,12 @@ public class Persona {
  * Tercer commit
  */
 
+public LocalDate calcularFechaNacimiento(int edad){
+    return LocalDate.now().minusYears(edad);
+}
+/*
+ * cuarto commit
+ */
 }
 
 
