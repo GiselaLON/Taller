@@ -9,7 +9,7 @@ public class Empleado extends Persona implements Trabajador {
 
 
     public void realizarTarea() {
-
+        System.out.println("Realizando tarea Laboral");
     }
 
 }
