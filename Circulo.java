@@ -10,7 +10,7 @@ public class Circulo extends FiguraGeometrica {
         this.radio = radio;
     }
 
-    
+
     public Float getPi() {
         return pi;
     }
@@ -24,6 +24,10 @@ public class Circulo extends FiguraGeometrica {
         this.radio = radio;
     }
     
-
-    
+    public float calcularPerimetro(){
+        return (2*pi)*radio;
+    }
+    public float calcularArea(){
+        return pi*(radio*radio);
+    }
 }

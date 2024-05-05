@@ -1,22 +1,32 @@
 public class Rectangulo extends FiguraGeometrica{
-    private Float ancho;
-    private Float largo;
+    private Float base;
+    private Float altura;
+
     
-    public Rectangulo(String nombre, String color, Float ancho, Float largo) {
+    public Rectangulo(String nombre, String color, Float base, Float altura) {
         super(nombre, color);
-        this.ancho = ancho;
-        this.largo = largo;
+        this.base = base;
+        this.altura = altura;
     }
-    public Float getAncho() {
-        return ancho;
+
+
+    public Float getBase() {
+        return base;
     }
-    public void setAncho(Float ancho) {
-        this.ancho = ancho;
+    public void setBase(Float base) {
+        this.base = base;
     }
-    public Float getLargo() {
-        return largo;
+    public Float getAltura() {
+        return altura;
     }
-    public void setLargo(Float largo) {
-        this.largo = largo;
+    public void setAltura(Float altura) {
+        this.altura = altura;
+    }
+
+    public float calcularArea(){
+        return this.altura * this.base;
+    }
+    public float calcularPerimetro(){
+        return 2*(this.base+this.altura);
     }
 }
