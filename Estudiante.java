@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Estudiante extends Persona {
+public class Estudiante extends Persona  {
      /*quinto commit */ 
 
 private String grado;
@@ -26,5 +26,10 @@ public String toString(){
     return "El nombre del estudiante es: "+ getNombre() +" su edad es: " + getEdad()+"Su fecha de nacimiento es: " + getFechaNacimiento()+ " y por ultimo esta cursando el grado: " + getGrado();
 
 }
+
+
+
+/*---------------------------- */
+
 
 }
