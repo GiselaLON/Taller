@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Estudiante extends Persona  {
+public class Estudiante extends Persona implements Trabajador  {
      /*quinto commit */ 
 
 private String grado;
@@ -27,6 +27,11 @@ public String toString(){
 
 }
 
+
+public void realizarTarea() {
+    System.out.println("Relaizando tarea escolar");
+
+}
 
 
 /*---------------------------- */
