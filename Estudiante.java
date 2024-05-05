@@ -5,6 +5,7 @@ public class Estudiante extends Persona {
 
 private String grado;
 /*sexto commit */
+<<<<<<< HEAD
 
 public Estudiante(String nombre, int edad, LocalDate fechaNacimiento, String grado) {
     super(nombre, edad, fechaNacimiento);
@@ -21,4 +22,6 @@ public void setGrado(String grado) {
 
 /*septimo commit */
 
+=======
+>>>>>>> fb45fa3af362fd4a989447fd435c9c21428838b6
 }
