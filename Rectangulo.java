@@ -29,4 +29,5 @@ public class Rectangulo extends FiguraGeometrica{
     public float calcularPerimetro(){
         return 2*(this.base+this.altura);
     }
+  
 }
