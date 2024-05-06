@@ -28,5 +28,8 @@ public class Vendedor extends Empleados {
     public void setV_horas(float v_horas) {
         this.v_horas = v_horas;
     }
-    
+    public float calcularSalario() {
+        return (v_horas*horas)+(ventas*(10/100));
+    }
+
 }
