@@ -19,6 +19,7 @@ public class Gerente extends Empleados {
     public void setBono(float bono) {
         this.bono = bono;
     }
-    
-
+    public float calcularSalario(){
+        return  (horas*v_horas)+bono;
+    }
 }
